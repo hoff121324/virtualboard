@@ -11,7 +11,7 @@ class DownloadStateHandler(tornado.web.RequestHandler):
         key = self.get_argument("key")
         if games.has_key(lobby_id):
             if games[lobby_id].password == key:
-                filename = str(datetime.datetime.now()) + ".vb"
+                filename = str(datetime.datetime.now()) + ".json"
                 self.set_header('Content-Type', 'application/json')
                 self.set_header('Content-Disposition', 'attachment; filename=' + filename)
                 self.write(json.dumps(games[lobby_id].board_state.get_json_obj(True)))

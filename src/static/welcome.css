@@ -40,7 +40,6 @@ html, body {
 	margin: auto;
 	position: relative;
     left: 50%;
-    top: 50%;
     margin-bottom: 50%;
     margin-right: -50%;
     transform: translate(-50%, 60%);

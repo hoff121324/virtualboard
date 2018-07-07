@@ -19,5 +19,5 @@ app = tornado.web.Application([
 	(r"/static/(.*)", tornado.web.StaticFileHandler, {"path": os.path.join(os.path.dirname(__file__), "static")}),
 	(r"/icon-proxy/(.*)", IconProxyHandler)
 ], settings)
-app.listen(8000)
+app.listen(80)
 tornado.ioloop.IOLoop.instance().start()
