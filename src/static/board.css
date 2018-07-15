@@ -176,7 +176,7 @@ div#menu
 	width: 200px;
 	padding: 15px;
 	top: 0px;
-	left: -300px;
+	left: 0;
 	background-color: #ffffff;
 	z-index: 900;
 }
